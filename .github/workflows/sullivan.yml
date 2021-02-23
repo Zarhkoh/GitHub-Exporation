@@ -14,4 +14,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: The ${{ github.event_name }} event triggered first step.
+        args: Un ${{ github.event_name }} à été fait sur la branche ${{ github.ref }}.
