@@ -17,4 +17,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: Un ${{ github.event_name }} à été fait par ${{ github.actor }} sur la branche ${{ github.ref }}.
+        args: Un ${{ github.event_name }} à été lancé par ${{ github.actor }} sur la branche ${{ github.ref }}.
