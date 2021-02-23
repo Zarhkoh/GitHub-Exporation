@@ -1,4 +1,4 @@
-name: Sullivan Discord Message
+name: Sullivan Test
 on:
   push:
     branches: [ sullivan ]
