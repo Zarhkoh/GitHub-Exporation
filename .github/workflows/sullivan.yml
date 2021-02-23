@@ -1,5 +1,7 @@
 name: Sullivan Discord Message
-on: [push]
+on:
+  push:
+    branches: [ sullivan ]
 jobs:
 
   build:
