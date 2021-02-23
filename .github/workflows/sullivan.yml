@@ -1,7 +1,7 @@
 name: Sullivan Test
 on:
   push:
-    branches: [ dodji, jeremy, ones, sullivan ]
+    branches: [ main, dodji, jeremy, ones, sullivan ]
   pull_request:
     branches: [main, sullivan]
 
