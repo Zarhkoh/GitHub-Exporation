@@ -1,7 +1,10 @@
-name: Sullivan Discord Message
+name: Sullivan Test
 on:
   push:
-    branches: [ sullivan ]
+    branches: [ dodji, jeremy, ones, sullivan ]
+  pull_request:
+    branches: [main, sullivan]
+
 jobs:
 
   build:
@@ -14,4 +17,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: The ${{ github.event_name }} event triggered first step.
+        args: Un ${{ github.event_name }} à été fait par ${{ github.actor }} sur la branche ${{ github.ref }}.
