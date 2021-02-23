@@ -2,6 +2,8 @@ name: Sullivan Test
 on:
   push:
     branches: [ sullivan ]
+  pull_request:
+    branches: [main, sullivan]
 jobs:
 
   build:
@@ -14,4 +16,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: Un ${{ github.event_name }} à été fait sur la branche ${{ github.ref }}.
+        args: Un ${{ github.event_name }} à été fait par ${{ github.actor }} sur la branche $ {{ github.ref }}.
