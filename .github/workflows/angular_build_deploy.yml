@@ -15,4 +15,5 @@ jobs:
       with:
         github_access_token: ${{ secrets.ACCESS_TOKEN }}
         deploy_branch: gh-pages
-        angular_dist_build_folder: dist/github-exporation
+        base_href: /github-exploration/
+        angular_dist_build_folder: dist/github-exploration
