@@ -14,7 +14,7 @@ jobs:
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@master
       with:
         github_access_token: ${{ secrets.ACCESS_TOKEN }}
-        build_configuration: prod
+        build_configuration: local
         base_href: /GitHub-Exporation/
         deploy_branch: gh-pages
         angular_dist_build_folder: dist/GitHub-Exporation
