@@ -14,6 +14,6 @@ jobs:
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@master
       with:
         github_access_token: ${{ secrets.ACCESS_TOKEN }}
-        base_href: https://zarhkoh.github.io/github-exploration/github-exploration/
+        base_href: https://zarhkoh.github.io/github-exploration/
         deploy_branch: gh-pages
         angular_dist_build_folder: dist/github-exploration
